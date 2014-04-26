@@ -8,4 +8,5 @@ Need apk? Just click _[link](https://github.com/passcard4android/PassCard/raw/ma
 <p align="center">
   <img src="https://github.com/passcard4android/PassCard/raw/master/ic_launcher-web.png" alt= "PassCard image"/>
 </p>
+Donate Bitcoin: 1N5czHaoSLukFSTq2ZJujaWGjkmBxv2dT9
 =================
