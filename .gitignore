@@ -33,7 +33,7 @@ proguard/
 # Android Studio captures folder
 captures/
 
-### Android Patch ###
+# Android Patch
 gen-external-apklibs
 
 # User-specific stuff:
@@ -58,10 +58,8 @@ gen-external-apklibs
 # Mongo Explorer plugin:
 .idea/mongoSettings.xml
 
-## File-based project format:
+# File-based project format:
 *.iws
-
-## Plugin-specific files:
 
 # IntelliJ
 /out/
@@ -80,7 +78,6 @@ fabric.properties
 
 # Gradle
 .gradle
-build/
 
 # Ignore Gradle GUI config
 gradle-app.setting
