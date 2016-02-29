@@ -25,7 +25,7 @@ CanvasCard.prototype.measure=function(width,height)
 	this.charheight=this.fontsize;
 	this.canvas.width=this.lineWidth+(this.xmargin*2);
 	this.canvas.height=(this.grid.length*this.charheight)+(this.ymargin*2)+this.codefontsize;
-}
+};
 CanvasCard.prototype.drawBorders=function()
 {
 	var c=this.context;
@@ -44,7 +44,7 @@ CanvasCard.prototype.drawBorders=function()
 	c.arc(leftx,bottomy,this.cornerRadius,Math.PI/2,Math.PI,false);
 	c.arc(leftx,topy,this.cornerRadius,Math.PI,-Math.PI/2,false);
 	c.stroke();
-}
+};
 CanvasCard.prototype.drawValues=function(highContrast)
 {
 	var colorArray;
@@ -79,7 +79,7 @@ CanvasCard.prototype.drawValues=function(highContrast)
 	c.font=this.codefontsize+"px "+this.codefont;
 	var seedsize=c.measureText(this.seed).width;
 	c.fillText(this.seed,(c.canvas.width/2)-(seedsize/2),y);
-}
+};
 CanvasCard.prototype.drawGrid=function()
 {
 	var c=this.context;
@@ -108,7 +108,7 @@ CanvasCard.prototype.drawGrid=function()
 		c.lineTo(x,y+linelen);
 		c.stroke();
 	}
-}
+};
 CanvasCard.prototype.antiAlias=function()
 {
 	//This isn't working very well right now
@@ -135,7 +135,7 @@ CanvasCard.prototype.antiAlias=function()
 	http://www.codeproject.com/KB/recipes/colorspace1.aspx
 	http://www.scribd.com/doc/6912465/Efficient-antialiasing-algorithm-for-computer-generated-images
 	*/
-}
+};
 CanvasCard.prototype.getLink=function(cb)
 {
 	if(!window.BlobBuilder&&window.WebKitBlobBuilder) window.BlobBuilder=window.WebKitBlobBuilder;
@@ -168,4 +168,4 @@ CanvasCard.prototype.getLink=function(cb)
 		cb(url);
 		return true;
 	}
-}
+};

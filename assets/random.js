@@ -14,7 +14,7 @@ Random.prototype.next=function(bits)
 	this.seed=this.seed.multiply(this.nc).add(new BigInteger("11")).and(this.n1shift48min1);
 	this.confineSeed();
 	return this.seed.shiftRight(48-bits);
-}
+};
 Random.prototype.nextInt=function(n)
 {
 	if(!n) return Random.confine(this.next(32),32);
@@ -28,17 +28,17 @@ Random.prototype.nextInt=function(n)
 	}
 	while(bits.subtract(val).add(n.subtract(BigInteger.ONE)).compareTo(BigInteger.ONE)==-1);
 	return Random.confine(val,32);
-}
+};
 Random.prototype.nextLong=function()
 {
 	var r=Random.confine(this.nextInt().shiftLeft(32),64);
 	r=Random.confine(r.add(this.nextInt()),64);
 	return r;
-}
+};
 Random.prototype.confineSeed=function()
 {
 	this.seed=Random.confine(this.seed,64);
-}
+};
 Random.confine=function(number,bitspace)
 {
 	if(typeof number=="number") number=new BigInteger(number.toString());
@@ -55,4 +55,4 @@ Random.confine=function(number,bitspace)
 		number=number.add(total);
 	}
 	return number;
-}
+};
