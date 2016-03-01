@@ -6,7 +6,6 @@
 
     this.WIDTH = 29;
     this.HEIGHT = 7;
-    this.BODY_HEIGHT = this.HEIGHT - 1;
     this.HEADER_CHARS = "■□▲△○●★☂☀☁☹☺♠♣♥♦♫€¥£$!?¡¿⊙◐◩�".split("");
     this.DIGITS = "01234567";
     this.DIGITS_AND_LETTERS = "23456789abcdefghjkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ";
@@ -116,7 +115,7 @@ function onFontLoad(cb, font, size, table, interval) {
         // Round up to the highest unit.
         var re = /([\d.]+)(px|em|ex|%|px|cm|mm|in|pt|pc)/; // css measure units.
         var results = cssUnit.replace(re, "$1");
-        return Math.ceil(results);
+        return Math.ceil(results.toString());
     };
     var checkInterval = setInterval(function () {
         for (character in table) {
