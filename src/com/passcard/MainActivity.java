@@ -14,7 +14,10 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            WebView.setWebContentsDebuggingEnabled(true);
+            WebViewPassCard.setWebContentsDebuggingEnabled(true);
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            WebViewPassCard.enableSlowWholeDocumentDraw();
         }
         setContentView(R.layout.mainland);
         WebViewPassCard = (WebView) findViewById(R.id.webview);
