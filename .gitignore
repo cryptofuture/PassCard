@@ -2,7 +2,7 @@
 # Built application files
 *.apk
 *.ap_
-
+/proguard_logs
 # Files for the Dalvik VM
 *.dex
 
