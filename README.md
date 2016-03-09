@@ -6,7 +6,8 @@ PassCard
 You can take your Password Card in any place you go. Application don't need extra permissions or internet access.
 And it runs locally.
 
-The idea is simple: generate a password card that has your password printed in the card IN PLAIN TEXT. Take the card with you, and you have access to passwords, for every account you have, and if an attacker get access to your card, you'll have time to change your password.
+The idea is simple: generate a password card that has your password printed in the card IN PLAIN TEXT.
+Take the card with you, and you have access to passwords, for every account you have, and if an attacker get access to your card, you'll have time to change your password.
 
 Application could be useful for old people, for people who need quite frequently change passwords. Beside that fact even printed Password Card glued to your monitor and shared in media, can be quite secure and will give you some time to change password in case of leak. Also you can invent you own scheme for reading letters on Password Card, where every letter means something else. You can check [Aaron's blog post](https://pthree.org/2010/09/21/password-cards/) about Password Cards for more information.
 
