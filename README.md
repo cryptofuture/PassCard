@@ -1,7 +1,7 @@
 PassCard
 ================
 
-**Android Password Card Generator Application** 
+[em]Android Password Card Generator Application[/em]
 
 You can take your Password Card in any place you go. Application don't need extra permissions or internet access. And it runs locally.  
 
@@ -18,4 +18,7 @@ Web page with canvas image runs in WebView. So you basically can take assets fol
 
 # Donation :  
 Bitcoin : 1N5czHaoSLukFSTq2ZJujaWGjkmBxv2dT9
+
+![alt tag](https://raw.githubusercontent.com/cryptofuture/PassCard/master/passcard.png)
+
 
