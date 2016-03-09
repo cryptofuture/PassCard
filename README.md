@@ -9,8 +9,7 @@ Application could be useful for old people, for people who need quite frequently
 
 # Installation:  
 
-: 1N5czHaoSLukFSTq2ZJujaWGjkmBxv2dT9
-<p align="center">
-  <img src="https://github.com/passcard4android/PassCard/raw/master/ic_launcher-web.png" alt= "PassCard image"/>
-</p>
-=================
+
+
+# Donation :  
+Bitcoin : 1N5czHaoSLukFSTq2ZJujaWGjkmBxv2dT9
