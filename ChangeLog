@@ -1,0 +1,8 @@
+version 1.1
+    Layout should be more smooth with different devices.
+    Application support Android 4.4.x and higher now.
+    Project moved to IDEA style.
+    Project icon changed.
+
+version 1.0
+    First PassCard release.
