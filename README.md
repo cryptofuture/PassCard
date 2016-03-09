@@ -19,7 +19,5 @@ Web page with canvas image runs in WebView. So you basically can take assets fol
 # It looks like :
 ![alt tag](https://raw.githubusercontent.com/cryptofuture/PassCard/master/passcard.png)
 
-# Donation :  
-
-
-
+# Donation :
+Bitcoin : 1N5czHaoSLukFSTq2ZJujaWGjkmBxv2dT9
