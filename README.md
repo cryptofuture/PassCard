@@ -1,7 +1,7 @@
 PassCard
 ================
 
-[em]Android Password Card Generator Application[/em]
+##Android Password Card Generator Application
 
 You can take your Password Card in any place you go. Application don't need extra permissions or internet access. And it runs locally.  
 
