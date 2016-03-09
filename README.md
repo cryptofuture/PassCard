@@ -14,7 +14,8 @@ Application could be useful for old people, for people who need quite frequently
 Install latest apk file from [F-Droid repository](https://f-droid.org/repository/browse/?fdfilter=Passcard&fdid=com.passcard ). Also F-Droid can handle application updating for you.
 
 # How it works
-Web page with canvas image runs in WebView. So you basically can take assets folder from project and run passwordcard.html file in any modern browser. jsbn and jsbn2 libraries used for basic BigInteger implementation and RSA encryption. LICENSES-assets file contains assets files licensing.
+Web page with canvas image runs in WebView. So you basically can take assets folder from project and run passwordcard.html file in any modern browser.
+jsbn and jsbn2 libraries used for basic BigInteger implementation and RSA encryption. LICENSES-assets file contains assets files licensing.
 
 # It looks like
 ![alt tag](https://raw.githubusercontent.com/cryptofuture/PassCard/master/passcard.png)
