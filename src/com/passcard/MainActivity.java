@@ -16,9 +16,9 @@ public class MainActivity extends Activity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             WebViewPassCard.setWebContentsDebuggingEnabled(true);
         }
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+        /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             WebViewPassCard.enableSlowWholeDocumentDraw();
-        }
+        }*/
         setContentView(R.layout.mainland);
         WebViewPassCard = (WebView) findViewById(R.id.webview);
         WebViewPassCard.getSettings().setDomStorageEnabled(true);

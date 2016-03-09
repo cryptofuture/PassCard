@@ -3,7 +3,6 @@
     this.digitArea = digitArea;
     this.includeSymbols = includeSymbols;
     this.grid = null;
-
     this.WIDTH = 29;
     this.HEIGHT = 7;
     this.HEADER_CHARS = "■□▲△○●★☂☀☁☹☺♠♣♥♦♫€¥£$!?¡¿⊙◐◩�".split("");
