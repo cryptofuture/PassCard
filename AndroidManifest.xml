@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.passcard" 
           android:installLocation="auto"
-          android:versionCode="2"
-          android:versionName="1.1">
-    <uses-sdk android:minSdkVersion="11"/>
+          android:versionCode="3"
+          android:versionName="1.2">
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="16"/>
     <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
         <activity android:name="MainActivity"
                   android:screenOrientation="landscape"

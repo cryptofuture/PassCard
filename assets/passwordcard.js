@@ -4,9 +4,9 @@
     this.includeSymbols = includeSymbols;
     this.grid = null;
     this.WIDTH = 29;
-    this.HEIGHT = 7;
+    this.HEIGHT = 9;
     this.HEADER_CHARS = "■□▲△○●★☂☀☁☹☺♠♣♥♦♫€¥£$!?¡¿⊙◐◩�".split("");
-    this.DIGITS = "01234567";
+    this.DIGITS = "0123456789";
     this.DIGITS_AND_LETTERS = "23456789abcdefghjkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ";
     this.DIGITS_LETTERS_AND_SYMBOLS = "23456789abcdefghjkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ@#$%&*<>?€+{}[]()/\\";
 }
@@ -30,7 +30,7 @@ PasswordCard.prototype.generateGrid = function () {
         alert("How the hell did this happen?!");
         var tmp = headerChars;
         headerChars = new Int8Array(this.WIDTH);
-        for (var i = 0; i < this.WIDTH; i++) headersChars[i] = tmp[i];
+        for (var i = 0; i < this.WIDTH; i++) headerChars[i] = tmp[i];
     }
     this.grid[0] = headerChars;
 
@@ -73,8 +73,7 @@ PasswordCard.prototype.generateGrid = function () {
 };
 
 addEventListener("load", function () {
-    var seed = localStorage.seed || randomSeed();
-    document.getElementById("seed").value = seed;
+    document.getElementById("seed").value = localStorage.seed || randomSeed();
     var fontsig = {i: [10, 17], o: [10, 17]};
     onFontLoad(function () {
         document.getElementById("generateBtn").addEventListener("click", generate, false);
@@ -85,7 +84,7 @@ addEventListener("load", function () {
 function generate() {
     var showgrid = document.getElementById("grid").checked;
     var highcontrast = document.getElementById("highcontrast").checked;
-    //var antiAlias=false;
+    var highcontrast=true;
 
     var seed = document.getElementById("seed").value;
     localStorage.seed = seed;
@@ -107,17 +106,15 @@ function onFontLoad(cb, font, size, table, interval) {
     div.style.fontFamily = font;
     div.style.fontSize = size;
     div.style.position = "absolute";
-    div.style.top = "-100px";
-    div.style.left = "-100px";
     document.body.appendChild(div);
     var getRawPixels = function (cssUnit) {
         // Round up to the highest unit.
-        var re = /([\d.]+)(px|em|ex|%|px|cm|mm|in|pt|pc)/; // css measure units.
+        var re = /([\d.]+)(px)/; // css measure units.
         var results = cssUnit.replace(re, "$1");
-        return Math.ceil(results.toString());
+        return Math.ceil((results * 10) / 10) ;
     };
     var checkInterval = setInterval(function () {
-        for (character in table) {
+        for (var character in table) {
             div.textContent = character;
             var t = table[character];
             var s = getComputedStyle(div);
