@@ -84,7 +84,6 @@ addEventListener("load", function () {
 function generate() {
     var showgrid = document.getElementById("grid").checked;
     var highcontrast = document.getElementById("highcontrast").checked;
-    var highcontrast=true;
 
     var seed = document.getElementById("seed").value;
     localStorage.seed = seed;
@@ -107,20 +106,12 @@ function onFontLoad(cb, font, size, table, interval) {
     div.style.fontSize = size;
     div.style.position = "absolute";
     document.body.appendChild(div);
-    var getRawPixels = function (cssUnit) {
-        // Round up to the highest unit.
-        var re = /([\d.]+)(px)/; // css measure units.
-        var results = cssUnit.replace(re, "$1");
-        return Math.ceil((results * 10) / 10) ;
-    };
     var checkInterval = setInterval(function () {
         for (var character in table) {
             div.textContent = character;
             var t = table[character];
             var s = getComputedStyle(div);
-            if (getRawPixels(s.width) != t[0] || getRawPixels(s.height) != t[1]) return;
         }
-        div.parentNode.removeChild(div);
         clearTimeout(checkInterval);
         cb();
     }, interval || 200);
