@@ -12,7 +12,7 @@ Application could be useful for old people, for people who need quite frequently
 
 ## Installation
 Install latest apk file from [F-Droid repository](https://f-droid.org/repository/browse/?fdfilter=Passcard&fdid=com.passcard ).  
-F-Droid can handle application updating for you.
+F-Droid can handle application updates for you.
 
 ## How it works
 Web page with canvas image runs in WebView. So you basically can take assets folder from project and run passwordcard.html file in any modern browser.  
