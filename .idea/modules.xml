@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/PassCard.iml" filepath="$PROJECT_DIR$/.idea/PassCard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PassCard.iml" filepath="$PROJECT_DIR$/.idea/modules/PassCard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" />
     </modules>
   </component>
 </project>
