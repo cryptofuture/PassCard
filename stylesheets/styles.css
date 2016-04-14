@@ -227,6 +227,9 @@ section {
   width:500px;
   float:right;
   padding-bottom:50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 small {
