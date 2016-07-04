@@ -11,8 +11,10 @@ The idea is simple: generate a password card that has your passwords printed in 
 Application could be useful for old people, for people who need quite frequently change passwords. Beside that fact even printed password card glued to your monitor and shared in media, can be quite secure and will give you some time to change password in case of leak. Also you can invent you own scheme for reading letters on password card, where every letter means something else. You can check [Aaron's blog post](https://pthree.org/2010/09/21/password-cards/) about password cards for more information.
 
 ## Installation
-Install latest apk file from [F-Droid repository](https://f-droid.org/repository/browse/?fdfilter=Passcard&fdid=com.passcard ).  
-F-Droid can handle application updates for you.
+[<img src="https://f-droid.org/badge/get-it-on.png"
+      alt="Get it on F-Droid"
+      height="80">](https://f-droid.org/app/com.passcard)
+
 
 ## How it works
 Web page with canvas image runs in WebView. So you basically can take assets folder from project and run passwordcard.html file in any modern browser.  
