@@ -1,7 +1,7 @@
 PassCard
 ================
 
-######Android Password Card Generator Application
+###### Android Password Card Generator Application
 
 You can take your password card in any place you go. Application don't need extra permissions or internet access.
 And it runs locally.
@@ -21,6 +21,9 @@ jsbn and jsbn2 libraries used for basic BigInteger implementation and RSA encryp
 
 ## It looks like
 ![alt tag](https://raw.githubusercontent.com/cryptofuture/PassCard/master/passcard.png)
+
+## We have also PassCard for Tizen
+Check [PassCard-Tizen](https://github.com/cryptofuture/PassCard-Tizen) repository
 
 ## Donation
 Bitcoin : 1N5czHaoSLukFSTq2ZJujaWGjkmBxv2dT9
